@@ -13,7 +13,11 @@ int main()
 	f2.denumerator = 4;
 	//Fraction fsum = f.addFractions(f, f2); - старая версия
 	Fraction fsum = f.addFractions(f2); // новая
-	fsum.printFruction();
+	Fraction fsub = f.subtractFractions(f2);
+	Fraction fmult = f.multiplyFractions(f2);
+	Fraction fdiv = f.divideFractions(f2);
+	fdiv.printFruction();
+	fmult.printFruction();
 
 	return 0;
 }
