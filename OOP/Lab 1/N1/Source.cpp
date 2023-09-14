@@ -6,6 +6,7 @@
 
 int main()
 {
+	/*
 	Fraction f, f2;
 	f.numerator = 1;
 	f.denumerator = 3;
@@ -19,6 +20,13 @@ int main()
 
 	fdiv.printFruction();
 	fmult.printFruction();
+	*/
+
+	Fraction fc;
+	fc.printFruction();
+
+	Fraction foo(2, 3);
+	foo.printFruction();
 
 	return 0;
 }

@@ -7,7 +7,6 @@ void Fraction::printFruction()
 	std::cout << numerator << '/' << denumerator << std::endl;
 }
 
-
 Fraction Fraction::addFractions(Fraction f2)
 {
 	Fraction fs;
@@ -54,4 +53,20 @@ Fraction Fraction::divideFractions(Fraction f2)
 	fs.numerator = numerator * f2.denumerator;
 	fs.denumerator = denumerator * f2.numerator;
 	return fs;
+}
+
+
+Fraction::Fraction() //constructor без параметров
+{
+	numerator = 1;
+	denumerator = 1;
+}
+
+
+Fraction::Fraction(int numerator, int denumerator) //constructor с параметрами
+{
+	numerator = numerator;
+	denumerator = denumerator;
+	//область видимости 
+	// список иниализации
 }
