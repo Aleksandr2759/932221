@@ -2,6 +2,23 @@
 
 #include "Array.h"
 
+double calculateAvg(Array arr)
+{
+	if (arr.size() == 0)
+	{
+		return 0;
+	}
+
+	double avg = 0;
+	for (int i = 0; i < arr.size(); ++i)
+	{
+		avg += arr[i];
+	}
+
+	avg /= arr.size();
+	return avg;
+}
+
 
 int main()
 {
