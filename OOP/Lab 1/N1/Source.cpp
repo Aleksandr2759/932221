@@ -6,9 +6,9 @@
 
 int main()
 {
-	/*
+	
 	Fraction f, f2;
-	f.numerator = 1;
+	f.setNumerator (1);
 	f.denumerator = 3;
 	f2.numerator = 2;
 	f2.denumerator = 4;
@@ -20,13 +20,18 @@ int main()
 
 	fdiv.printFruction();
 	fmult.printFruction();
-	*/
+	
 
 	Fraction fc;
 	fc.printFruction();
 
 	Fraction foo(2, 3);
 	foo.printFruction();
+
+	//пример комментария для теста кодировки
+
+
+	// c сконструктором: 11:13
 
 	return 0;
 }

@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-void Fraction::printFruction()
+void Fraction::printFruction() const
 {
 	std::cout << numerator << '/' << denumerator << std::endl;
 }
@@ -55,18 +55,57 @@ Fraction Fraction::divideFractions(Fraction f2)
 	return fs;
 }
 
-
+/*
 Fraction::Fraction() //constructor без параметров
 {
 	numerator = 1;
 	denumerator = 1;
 }
-
-
+*/
+/*
 Fraction::Fraction(int numerator, int denumerator) //constructor с параметрами
 {
 	numerator = numerator;
 	denumerator = denumerator;
 	//область видимости 
 	// список иниализации
+}
+*/
+
+//модернизируем констр с пар
+Fraction::Fraction(int numerator, int denumerator) 
+	: numerator (numerator) //это список инициализации
+{	
+	//this->numerator == numerator;
+	//this->denumenator == 1
+
+	if (denumerator != 0)
+	{
+		this->denumerator = denumerator;
+	}
+	else
+	{
+		std::cerr << "..."
+	}
+	// Знаменатель уже равен 1, можно ничего не делать
+}
+
+int Fraction::getNumerator()
+{
+	return m_numerator;
+}
+
+int Fraction::getDenumerator()
+{
+	return m_denumerator;
+}
+
+int Fraction::setNumerator(int value)
+{
+	m_numerator = value;
+}
+
+int Fraction::setDenumerator(int value)
+{
+	m_denumerator = value;
 }
